@@ -183,10 +183,12 @@
       }
       // get current project name - if null (in inbox) use "No Project"
       let taskProject
+      let taskNote
       if (completedTask.containingProject == null) {
         taskProject = 'No Project'
       } else {
         taskProject = completedTask.containingProject.name
+        taskNote = completedTask.containingProject.note
       }
 
       // check if project has changed
@@ -199,6 +201,7 @@
             )
           }
           markdown = markdown.concat('\n_', taskProject.trim(), '_\n')
+          markdown = markdown.concat(taskNote, '\n')
         }
         currentProject = taskProject
         projectNameCounter = 1

@@ -3,7 +3,7 @@
   "identifier": "com.KaitlinSalzke.completedTaskReport",
   "author": "Kaitlin Salzke",
   "description": "Plugin to generate a daily completed task report from OmniFocus",
-  "version": "2.4.1",
+  "version": "2.4.1a",
   "actions": [
     {
       "identifier": "sendToDayOne",
